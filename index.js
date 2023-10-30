@@ -36,49 +36,43 @@ document.querySelectorAll(".drum")[i].addEventListener("click",function jar(){
 
 }
 */
-
+/*
 /// Add for loop , Add Audio for all drum///////////////////////////////////////////////////
 
 var drumLength = document.querySelectorAll(".drum").length;
 for(var i=0 ; i<drumLength ; i++){
         document.querySelectorAll(".drum")[0].addEventListener("click",function jar(){
-            console.log(this.style.color="white");
             var sound = new Audio("sounds/tom-1.mp3");
             sound.play();
         });
         document.querySelectorAll(".drum")[1].addEventListener("click",function jar(){
-            console.log(this.style.color="white");
             var sound = new Audio("sounds/tom-2.mp3");
             sound.play();
         });
         document.querySelectorAll(".drum")[2].addEventListener("click",function jar(){
-            console.log(this.style.color="white");
             var sound = new Audio("sounds/tom-3.mp3");
             sound.play();
         });
         document.querySelectorAll(".drum")[3].addEventListener("click",function jar(){
-            console.log(this.style.color="white");
             var sound = new Audio("sounds/tom-4.mp3");
             sound.play();
         });
         document.querySelectorAll(".drum")[4].addEventListener("click",function jar(){
-            console.log(this.style.color="white");
             var sound = new Audio("sounds/snare.mp3");
             sound.play();
         });
         document.querySelectorAll(".drum")[5].addEventListener("click",function jar(){
-            console.log(this.style.color="white");
             var sound = new Audio("sounds/kick-bass.mp3");
             sound.play();
         });
         document.querySelectorAll(".drum")[6].addEventListener("click",function jar(){
-            console.log(this.style.color="white");
             var sound = new Audio("sounds/crash.mp3");
             sound.play();
         });
         
 
 }
+*/
 
 /*
 /// Add for loop , Add Audio, Change text color to white ///////////////////////////////////////////////////
@@ -97,3 +91,59 @@ for(var i=0 ; i<drumLength ; i++){
 // sound.play();
 
 */
+
+var drumLength = document.querySelectorAll(".drum").length;
+// for(var i=0 ; i<drumLength ; i++){
+//         document.querySelectorAll(".drum")[i].addEventListener("click",function jar(){
+//                 var sound = new Audio("sounds/tom-1.mp3");
+//                 sound.play();
+//                 console.log(console.log(this)+ "Index" + i);
+//         });
+
+        document.querySelectorAll(".drum")[0].addEventListener("click",function jar(){
+        var sound = new Audio("sounds/tom-1.mp3");
+        sound.play();
+        console.log(this.style.color="white");
+        console.log(this);
+        
+        });
+        document.querySelectorAll(".drum")[1].addEventListener("click",function jar(){
+            var sound = new Audio("sounds/tom-2.mp3");
+            sound.play();
+            console.log(this.style.color="black");
+            console.log(this);
+        });
+        
+        document.querySelectorAll(".drum")[2].addEventListener("click",function jar(){
+            var sound = new Audio("sounds/tom-3.mp3");
+            sound.play();
+            console.log(this.style.color="green");
+            console.log(this);
+        });
+        document.querySelectorAll(".drum")[3].addEventListener("click",function jar(){
+            var sound = new Audio("sounds/tom-4.mp3");
+            sound.play();
+            console.log(this.style.color="blue");
+            console.log(this);
+        });
+        document.querySelectorAll(".drum")[4].addEventListener("click",function jar(){
+            var sound = new Audio("sounds/snare.mp3");
+            sound.play();
+            console.log(this.style.color="yellow");
+            console.log(this);
+        });
+        document.querySelectorAll(".drum")[5].addEventListener("click",function jar(){
+            var sound = new Audio("sounds/kick-bass.mp3");
+            sound.play();
+            console.log(this.style.color="red");
+            console.log(this);
+        });
+        document.querySelectorAll(".drum")[6].addEventListener("click",function jar(){
+            var sound = new Audio("sounds/crash.mp3");
+            sound.play();
+            console.log(this.style.color="purple");
+            console.log(this);
+        });
+        
+
+// }
